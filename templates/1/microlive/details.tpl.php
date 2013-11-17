@@ -1,0 +1,1 @@
+<?php TPL::module('microlive/live_details', array('liveInfo' => $liveInfo, 'input_params' => $input_params));?>

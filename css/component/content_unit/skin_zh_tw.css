@@ -1,0 +1,27 @@
+﻿@import url( "skin.css" );
+
+/*导入图片*/
+.post-box .share-btn,
+.post-box .share-btn-disable,
+.post-box .post-success,
+.post-box .load-fail,
+.btn-follow-all,
+.btn-addfollow,
+.btn-followed { background:url( bgimg/tc_skin_bg.png ) no-repeat; }
+
+/*微博发布框*/
+.post-box .key-tips.out140 { background-position:-1px -282px; }
+.post-box .share-btn { background-position:0 -336px;}
+.post-box .share-btn:hover { background-position:-88px -336px;}
+.post-box .share-btn-disable { background-position:-176px -336px; cursor:default;}
+.post-box .share-btn-disable:hover { background-position:-176px -336px; cursor:default;}
+.post-box .load-fail { background-position:0 -432px;  }
+.post-box .post-success { background-position:-40px -432px; }
+
+.btn-follow-all { background-position:0 -384px; }
+.btn-follow-all:hover { background-position:-128px -384px; }
+
+/*加关注和已关注按钮*/
+.btn-addfollow { background-position:0 -464px; }
+.btn-addfollow:hover { background-position:-72px -464px; }
+.btn-followed { background-position:-144px -464px; cursor:default; }

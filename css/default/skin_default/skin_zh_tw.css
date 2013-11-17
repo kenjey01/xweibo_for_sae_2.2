@@ -1,0 +1,19 @@
+@import url( "skin.css" );
+
+/*skin-default*/
+.addfollow-btn,
+.followed-btn,
+.post-box .post-title,
+.post-box .share-btn,
+.post-box .share-btn:hover, 
+.post-box .share-btn-disable { background:url( bgimg/tc_skin_bg.png ) no-repeat; }
+
+.addfollow-btn,
+.followed-btn { background-position:0 -40px;cursor:pointer; }
+.addfollow-btn:hover { background-position:-72px -40px;}
+.followed-btn { background-position:-144px -40px; cursor:default; }
+.post-box .post-title { background-position:0 0; }
+.post-box .share-btn { background-position:0 -80px;}
+.post-box .share-btn:hover { background-position:-104px -80px;}
+.post-box .share-btn-disable { background-position:-208px -80px; cursor:default;}
+.post-box .share-btn-disable:hover { background-position:-208px -80px; cursor:default;}

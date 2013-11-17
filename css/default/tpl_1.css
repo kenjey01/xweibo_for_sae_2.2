@@ -1,0 +1,116 @@
+﻿@charset "utf-8";
+/*
+  维护者：林毅、蔡伟江
+  文档作用：定义微博标准版两栏框架结构样式
+*/
+#wrap, #header, #container, #footer { margin-left:auto; margin-right:auto; }
+.aside { float:left; }
+#container:after,
+.content:after,
+.live-newest .item:after,
+.guests-list ul:after { content:' '; display:block; height:0; clear:both; }
+#wrap .wrap-in,
+#container,
+.content,
+.live-newest .item,
+.guests-list ul { zoom:1; }
+
+/*头部*/
+#header{}
+#header .inner-header{ position:relative; margin:auto; width:800px; height:127px; z-index:100;}
+
+/*容器主体布局*/
+#container { position:relative; margin:0 auto 10px; width:800px; }
+#container .content { float:left; width:100%; min-height:1px; }
+#container .content .main { margin-right:200px;padding:15px 20px 50px; }
+#container .aside { margin-left:-200px; width:200px;margin-top:15px; }
+#container.single .content .main { margin:0;padding:30px 20px 50px; }
+#container.single { background:#fff none!important;}
+
+/*底部*/
+#footer { margin-bottom:25px; }
+#footer .ft-in{ position:relative;margin:0 auto; width:800px;height:60px;line-height:60px; }
+#footer .ft-bg { position:absolute; top:0; left:0; width:100%; height:60px; opacity:.4; filter:alpha(opacity=40); }
+#footer .ft-con { position:relative;overflow:hidden; }
+#footer .ft-con span {margin-left:15px;}
+#footer .ft-con .footer-defined{ float:right; margin-right:10px;_position:relative; }
+#footer .ft-con .footer-defined s { color:#999;text-decoration:none; }
+#footer .ft-con a{ margin:0 8px;}
+
+/*导航菜单*/
+.nav .inner-nav{ width:800px; }
+
+.new-tips { margin-left:228px; }
+
+/*logo*/
+.logo{ position:absolute; top:20px; left:0; display:block;}
+/**html .logo{ background-image: none;filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="css/bgimg/logo.png", sizingMethod="scale");}*/
+
+/*微博列表*/
+.feed-list{ padding:0 0 20px;}
+
+/*引导页面*/
+#guide-page #container.single .main {padding:0 25px 50px;*overflow:hidden;}
+
+/*两栏菜单*/
+.menu{ position:absolute; bottom:0; right:0; width:800px; height:37px; _bottom:-1px; }
+.menu .menu-over{ height:28px; margin-left:-1px; padding-left:16px; padding-right:15px;  _height:27px;  }
+.menu .menu-custom{ height:28px; padding-left:15px; margin-left:-1px; _height:27px;  }
+.menu li.menu-first{ margin-left:0px; padding-left:15px; }
+.menu .main-menu{ margin-left:2px; }
+.menu li{ position:relative; float:left; padding:8px 15px 0; padding-top:10px\9; }
+.menu a{ font-size:14px;outline:none; }
+.menu .menu-bg{ position:absolute; top:0; left:0; width:800px; height:37px; z-index:-1; }
+.menu .menu-bg .l-bg,
+.menu .menu-bg .r-bg{ width:5px; height:37px; }
+.menu .menu-bg .l-bg{ float:left; }
+.menu .menu-bg .r-bg{ float:right; }
+.menu .sub-pubmenu { position:absolute; top:36px; left:0; padding:1px; }
+.menu .sub-pubmenu li{ float:none; padding:0; background:none; white-space:nowrap; }
+.menu .sub-pubmenu li a{ display:block; width:126px; height:25px; margin:0; font:12px/25px Tahoma; text-indent:20px; overflow:hidden; +width:129px; _width:126px; }
+.menu .sub-arrow{ display:inline-block; width:6px; height:10px; overflow:hidden; *height:18px; }
+
+/*右边用户菜单*/
+.user-menu{ margin:25px 0 24px;}
+.user-menu a { display:block; height:32px; font-size:14px; line-height:31px; text-indent:30px;background-position:0 -405px; _background-position:0 -404px; +line-height:33px; line-height:34px\0; }
+.user-menu span{ float:left; margin:5px 0 0 5px; width:20px; height:20px;}
+#home .home-current,
+#atme .atme-current,
+#comments .comment-current,
+#favs .favs-current,
+#systemnotice .systemnotice-current,
+#messages .messages-current { position:relative; top:-1px; height:35px; font-weight:bold; line-height:35px;color:#fff; }
+
+/*名人堂*/
+.interest-list{ margin-left:29px;}
+.interest-list li{ margin-right:21px;}
+
+/*返回顶部*/
+.gotop{ margin-left:401px;}
+
+/*绑定帐号*/
+.logo-pic .logo1 {right:510px;}
+.logo-pic .logo2 {left:480px;}
+
+/*错误页面 403 帐号被封*/
+.inhibit {margin:0 auto;overflow:hidden;padding:150px 0;width:270px;}
+#inhibit .notvisit { width:400px; }
+
+/*仅微博帐号登录*/
+.weibo-login-info {overflow:hidden;padding-left:215px;}
+.weibo-login-con {float:left;line-height:63px;overflow:hidden;}
+.weibo-login-con p {font-size:16px;padding-left:14px;}
+.weibo-login-area {overflow:hidden;padding:0 20px 80px 280px;_zoom:1;}
+
+/*第二步：看看推荐的人*/
+#guide-narrow .active-wrap { margin:0 20px;border-top:1px solid #DDE4E6; overflow:hidden; }
+.user-list .user-list-wrap .user-item { width:280px;}
+.user-list .user-list-wrap .user-info{ width:130px;}
+
+/*底部广告*/
+.ft-xad-in{ width:800px; margin:0 auto 10px; overflow:hidden; }
+
+/*头部广告*/
+.hd-xad-in{ width:570px; }
+
+

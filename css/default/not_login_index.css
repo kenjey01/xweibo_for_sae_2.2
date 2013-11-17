@@ -1,0 +1,122 @@
+@charset "utf-8";
+/*
+  维护者：蔡伟江
+  文档作用：定义微博标准版未登录首页样式
+*/
+
+/* reset */
+body, p, ul, li, h1, h3{ margin:0; padding:0;}
+body{ font:12px/1.5 Arial, Helvetica, sans-serif; color:#444; }
+li{ list-style:none;}
+img{ border:0;}
+em{ font-style:normal; }
+.hidden{ display:none!important;}
+a { color:#3290D4; text-decoration:none;  }
+a:hover { text-decoration:underline;}
+
+/*引入图片*/
+.t,
+.b,
+.operate-area,
+.btn-register a,
+.btn-login a,
+.list-hd h3,
+.prev,
+.next,
+.ranking,
+.top-three{ background:url(bgimg/not_login_bg.png) no-repeat; }
+
+html{ background:#e1f5f8; }
+.wrap{ background:url(bgimg/not_login_main_bg_x.png) repeat-x center top; }
+.wrap-in{ background:url(bgimg/not_login_main_bg.jpg) no-repeat center top; }
+
+#header{ height:90px; }
+.hd-in{ position:relative; width:950px; margin:auto; }  
+	.logo{ float:left; margin:30px 0 0 10px }
+	.logo a{ outline:none; }
+	.hd-nav{ float:right; margin:20px 20px 0; _display:inline; }
+	.hd-nav a{ margin-left:20px; color:#000; }
+	
+#container{ width:950px; margin:auto; }  
+	.t, .b{ width:950px; height:5px; overflow:hidden; background:url(bgimg/not_login_bg.png) no-repeat; }
+	.t{ background-position:0 0; }
+	.b{ background-position:0 -5px; }
+.main{ padding:15px 19px; border:solid #C9E2E6; border-width:0 1px; background:#fff; overflow:hidden; _zoom:1; }
+	
+#footer { margin-bottom:25px; }
+#footer .ft-in { width:950px; margin:0 auto; height:60px; line-height:60px;}
+#footer .ft-bg { display:none; }
+#footer .ft-con span { margin-left:15px;}
+#footer .ft-con .footer-defined{ float:right; margin-right:10px; _display:inline; }
+#footer .ft-con .footer-defined s { color:#999; text-decoration:none;  }
+#footer .ft-con a{ margin:0 8px;}
+	
+.main-left{ float:left; width:637px; padding-right:19px; overflow:hidden; }	
+.main-right{ float:left; width:254px; overflow:hidden; }	
+
+/*右边栏*/
+	/*注册-登录*/
+	.operate-area{ width:254px; height:246px; margin-bottom:9px; background-position:right -30px; text-align:center; }	
+	.area-in{ padding-top:38px; }
+	.btn-register a{ display:block; width:194px; height:57px; margin:0 auto 15px; background-position:left -204px; text-indent:-9999px; outline:none; }
+	.btn-register a:hover{ background-position:-214px -204px; }
+	.btn-login a{ display:block; width:180px; height:25px; margin:52px auto 0; padding-top:7px; background-position:left -281px; color:#000; font-size:14px;  text-indent:19px; outline:none; }
+	.btn-login a:hover{ background-position:-200px -281px; text-decoration:none; }
+
+	/*人气推荐*/
+	.recom-list .list-hd h3{ background-position:0 -146px; }
+	.top-list{ padding:0 10px; } 
+	.top-list li{ padding-bottom:8px; margin-bottom:8px; background:url(bgimg/bottom_line.gif) repeat-x center bottom; line-height:16px; overflow:hidden; _zoom:1; } 
+	.top-list .ranking{ float:left; width:18px; height:16px; margin-right:8px; background-position:-311px -146px; color:#fff; text-align:center; line-height:16px; }
+	.top-list .top-three{ background-position:-273px -146px; }
+	.top-list .user-pic img{ float:left; width:30px; height:30px; padding:2px; margin-right:5px; border:1px solid #ccc; background:#fff; }
+	.top-list span{ float:right; color:#999; }
+
+/*左边栏*/	
+.banner,
+.user-list{ margin-bottom:20px; }
+.list-hd{ margin-bottom:12px; }
+.list-hd h3{ height:38px; text-indent:-9999px; }
+.user-list .list-hd h3{ background-position:0 -30px; }
+.talk-list .list-hd h3{ background-position:0 -88px; }
+
+	/*他们在微博*/	
+	.user-list{ position:relative; _zoom:1; }
+	.user-list .list-bd{ position:relative; height:72px; margin:0 30px; overflow:hidden; _zoom:1; }
+	.user-list .prev,
+	.user-list .next{ position:absolute; top:70px; width:7px; height:13px; overflow:hidden; text-indent:-9999px; outline:none; }
+	.user-list .prev{ left:10px; background-position:-349px -146px; }
+	.user-list .next{ right:10px; background-position:-369px -146px; }
+	.user-list .prev:hover{ background-position:-386px -146px; }
+	.user-list .next:hover{ background-position:-406px -146px; }
+	.user-list .prev-disabled,
+	.user-list .prev-disabled:hover{ background-position:-423px -146px; cursor:default; }
+	.user-list .next-disabled,
+	.user-list .next-disabled:hover{ background-position:-443px -146px; cursor:default; }
+	.user-list ul{ position:absolute; width:1000px; }
+	.user-list li{ float:left; width:50px; margin-right:25px; overflow:hidden; _display:inline; }
+	.user-list li img{ display:block; width:50px; height:50px;  }
+	.user-list li p{ width:4em; height:20px; margin:3px auto 0; text-align:center; overflow:hidden; }
+	
+	/*他们在说*/	
+	.talk-list .list-bd{ height:230px; padding:0 10px; overflow:hidden; }
+	.talk-list .feed-list li{ margin-bottom:20px; padding-bottom:10px; background:url(bgimg/bottom_line.gif) repeat-x center bottom; overflow:hidden; *zoom:1; }
+	.talk-list .user-pic{ float:left; }
+	.talk-list .user-pic img{ width:50px; height:50px; }
+	.talk-list .feed-content{ margin-left:60px; }
+	.talk-list .feed-main{ height:35px; overflow:hidden; }
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	

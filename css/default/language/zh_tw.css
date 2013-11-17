@@ -1,0 +1,70 @@
+.search-host,
+.s-btn,
+.btn-launch-event,
+.btn-ffirm,
+.btn-login,
+.select-user .click-btn { background:url( bgimg/skin_btn.png ) no-repeat; }
+
+.search-host { background-position: 0 0; }
+.s-btn { background-position: 0 -48px; }
+.btn-launch-event { background-position: 0 -96px; }
+.btn-ffirm { background-position: 0 -144px; }
+.btn-login { background-position: 0 -192px; }
+.select-user .click-btn { background-position: 0 -248px; }
+
+.not-started,
+.going,
+.closed,
+.guest-mark,
+.btn-recommend,
+.ask-icon,
+.reply-icon,
+.emcee-icon { background:url(bgimg/bg_app.png) no-repeat;}
+
+.not-started { background-position:0 0; }
+.going { background-position:-128px 0;}
+.closed { background-position:-248px 0;}
+.guest-mark { background-position: 0 -55px; }
+.btn-recommend { background-position:0 -104px; }
+.btn-recommend:hover { background-position:-160px -104px;}
+.ask-icon { background-position: 0 -207px; }
+.reply-icon { background-position: -63px -207px; }
+.emcee-icon { background-position: -126px -207px; }
+
+.btn-sina-bind-l,
+.btn-sina-bind-s,
+.btn-sina-login { background:url( bgimg/btn_bind.png ) no-repeat; }
+
+.btn-sina-bind-l { background-position: 0 -104px; }
+.btn-sina-bind-l:hover { background-position:-221px -104px; }
+.btn-sina-bind-s { background-position: 0 -165px; }
+.btn-sina-bind-s:hover {background-position:-194px -165px;}
+.btn-sina-login { background-position: 0 -218px; }
+.btn-sina-login:hover {background-position:-194px -218px;}
+
+.user-list .list-hd h3,
+.talk-list .list-hd h3,
+.recom-list .list-hd h3,
+.btn-now-login,
+.btn-register { background:url( bgimg/not_login_bg.png ) no-repeat; }
+
+.user-list .list-hd h3 { background-position: 0 -30px; }
+.talk-list .list-hd h3 { background-position: 0 -88px; }
+.recom-list .list-hd h3 { background-position: 0 -146px; }
+.btn-register { background-position: 0  -204px; }
+.btn-register:hover { background-position:-214px -204px; }
+.btn-now-login { width:140px; background-position:-408px -334px; }
+.btn-now-login:hover { background-position:-568px -334px; text-decoration:none; }
+
+.talk-logo { background:url(bgimg/talk_logo.png) no-repeat; _background:none; _filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="/css/default/language/bgimg/talk_logo.png", sizingMethod="scale");}
+.live-logo { background:url(bgimg/live_logo.png) no-repeat; _background:none; _filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="/css/default/language/bgimg/live_logo.png", sizingMethod="scale");}
+/*图标*/
+
+/*guide.html*/
+.welcome { background:url( bgimg/guide_bg.png ) no-repeat; }
+
+/*登录提示*/
+.login-tips{ background:url(bgimg/login_tips.png) no-repeat; }
+
+/*浮层登录窗口背景*/
+.win-bind-login .win-con-in{ background:url( bgimg/bind_login_bg.png ) no-repeat; } 

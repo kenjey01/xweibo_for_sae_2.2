@@ -1,0 +1,27 @@
+@import url( "retweet.css" );
+
+/*微博发布框*/
+.post-box .share-btn,
+.post-box .share-btn:hover,
+.post-box .share-btn-disable,
+.addfollow-btn,
+.followed-btn,
+.retweet .go-weibo-btn a,
+.icon-close-btn,
+.icon-alert { background:url(bgimg/tc_retweet_bg.png) no-repeat; }
+
+.post-box .share-btn { background-position:0 0; }
+.post-box .share-btn:hover { background-position:-104px 0; }
+.post-box .share-btn-disable, .post-box .share-btn-disable:hover { background-position:-208px 0; cursor:default; }
+
+/*加关注和已关注按钮*/
+	.addfollow-btn, .followed-btn { background-position:0 -49px; }
+.addfollow-btn:hover { background-position:-72px -49px; }
+.followed-btn { background-position:-144px -49px; cursor:default; }
+.retweet .go-weibo-btn a { background-position:0 -90px; }
+.retweet .go-weibo-btn a:hover { background-position:-144px -90px; }
+
+/*转发按钮*/
+.share-b{ background:url(bgimg/tc_btn_share_l1.png) no-repeat;}
+.share-d{ background:url(bgimg/tc_btn_share_m1.png) no-repeat;}
+.share-f{ background:url(bgimg/tc_btn_share_s1.png) no-repeat;}

@@ -1,0 +1,183 @@
+﻿@charset "utf-8";
+/**
+* @xweibo component skin
+* @xweibo 输出挂件皮肤样式
+*/
+a:hover { text-decoration:underline; }
+
+/*导入图片*/
+.post-box .post-title,
+.post-box .post-textarea,
+.post-box .post-textarea .inner,
+.post-box .post-focus,
+.post-box .post-focus .inner,
+.post-box .share-btn,
+.post-box .share-btn-disable,
+.post-box .post-success,
+.post-box .load-fail,
+.btn-follow-all,
+.btn-addfollow,
+.btn-followed { background:url( bgimg/skin_bg.png ) no-repeat; }
+
+.tab-s1 a,
+.tab-s1 a span,
+.tab-s1 .current,
+.tab-s1 .current span { background:url( bgimg/tab_bg.png ) no-repeat; }
+
+/* skin01 */
+.skin01 a:link, .skin01 a:visited { color:#0082cb; }
+.skin01 a:hover { color:#390; }
+.skin01 .location {color:#8d8d8d;}
+.skin01 .weibo {border:1px solid #c0dade;}
+.sink01 .weibo_noborder {border:0 none;}/*去掉边框*/
+.skin01 .weibo-title {background:#bce7ed;border-bottom:1px solid #c0dade;}
+.skin01 .arrow-up,.skin01 .arrow-down {background-repeat:repeat-x;}
+.skin01 .arrow-up:hover, .skin01 .arrow-down:hover {background-position:0 -46px;}
+.skin01 .arrow-up img{background-position:0 -20px;}
+.skin01 .arrow-down img{background-position:0 -32px;}
+.skin01 .arrow-up:hover img{background-position:0 -144px;}
+.skin01 .arrow-down:hover img{background-position:0 -148px;}
+
+.skin02 a:link, .skin02 a:visited, .skin02 a:hover {color:#5093d5;}
+.skin02 .location {color:#8d8d8d;}
+.skin02 .weibo {border:1px solid #cacaca;}
+.skin02 .weibo_noborder {border:0 none;}
+.skin02 .weibo-title {background:#e1e1e1;border-bottom:1px solid #cacaca;}
+.skin02 .arrow-up,.skin02 .arrow-down {background-repeat:repeat-x;}
+.skin02 .arrow-up:hover, .skin02 .arrow-down:hover {background-position:0 -46px;}
+.skin02 .arrow-up img{background-position:0 -20px;}
+.skin02 .arrow-down img{background-position:0 -32px;}
+.skin02 .arrow-up:hover img{background-position:0 -144px;}
+.skin02 .arrow-down:hover img{background-position:0 -148px;}
+
+.skin03 a:link, .skin03 a:visited, .skin03 a:hover {color:#6a9754;}
+.skin03 .location {color:#8d8d8d;}
+.skin03 .weibo {border:1px solid #c5d5b4;}
+.skin03 .weibo_noborder {border:0 none;}
+.skin03 .weibo-title {background:#dbedc8;border-bottom:1px solid #c5d5b4;}
+.skin03 .arrow-up,.skin03 .arrow-down {background-repeat:repeat-x;}
+.skin03 .arrow-up:hover, .skin03 .arrow-down:hover {background-position:0 -46px;}
+.skin03 .arrow-up img{background-position:0 -20px;}
+.skin03 .arrow-down img{background-position:0 -32px;}
+.skin03 .arrow-up:hover img{background-position:0 -144px;}
+.skin03 .arrow-down:hover img{background-position:0 -148px;}
+
+.skin04 a:link, .skin04 a:visited, .skin04 a:hover {color:#b3726d;}
+.skin04 .location {color:#8d8d8d;}
+.skin04 .weibo {border:1px solid #ffcbb6;}
+.skin04 .weibo_noborder {border:0 none;}
+.skin04 .weibo-title {background:#f9e0d6;border-bottom:1px solid #dec5ba;}
+.skin04 .arrow-up,.skin04 .arrow-down {background-repeat:repeat-x;}
+.skin04 .arrow-up:hover, .skin04 .arrow-down:hover {background-position:0 -46px;}
+.skin04 .arrow-up img{background-position:0 -20px;}
+.skin04 .arrow-down img{background-position:0 -32px;}
+.skin04 .arrow-up:hover img{background-position:0 -144px;}
+.skin04 .arrow-down:hover img{background-position:0 -148px;}
+
+.skin05 a:link, .skin05 a:visited, .skin05 a:hover {color:#0082cb;}
+.skin05 .location {color:#8d8d8d;}
+.skin05 .weibo {border:1px solid #fff;}
+.skin05 .weibo_noborder {border:0 none;}
+.skin05 .weibo-title {background:#fff;border-bottom:1px solid #e5e5e5;}
+.skin05 .arrow-up,.skin05 .arrow-down {background-repeat:repeat-x;}
+.skin05 .arrow-up:hover, .skin05 .arrow-down:hover {background-position:0 -46px;}
+.skin05 .arrow-up img{background-position:0 -20px;}
+.skin05 .arrow-down img{background-position:0 -32px;}
+.skin05 .arrow-up:hover img{background-position:0 -144px;}
+.skin05 .arrow-down:hover img{background-position:0 -148px;}
+
+.skin06 a:link, .skin06 a:visited, .skin06 a:hover {color:#674ba7;}
+.skin06 .location {color:#8d8d8d;}
+.skin06 .weibo {border:1px solid #d7c7ff;}
+.skin06 .weibo_noborder {border:0 none;}
+.skin06 .weibo-title {background:#e3dbf7;border-bottom:1px solid #ccc5de;}
+.skin06 .arrow-up,.skin06 .arrow-down {background-repeat:repeat-x;}
+.skin06 .arrow-up:hover, .skin06 .arrow-down:hover {background-position:0 -46px;}
+.skin06 .arrow-up img{background-position:0 -20px;}
+.skin06 .arrow-down img{background-position:0 -32px;}
+.skin06 .arrow-up:hover img{background-position:0 -144px;}
+.skin06 .arrow-down:hover img{background-position:0 -148px;}
+
+.skin07 a:link, .skin07 a:visited, .skin07 a:hover {color:#9f8c40;}
+.skin07 .location {color:#8d8d8d;}
+.skin07 .weibo {border:1px solid #fff498;}
+.skin07 .weibo_noborder {border:0 none;}
+.skin07 .weibo-title {background:#fcf4b1;border-bottom:1px solid #e2db9f;}
+.skin07 .arrow-up,.skin07 .arrow-down {background-repeat:repeat-x;}
+.skin07 .arrow-up:hover, .skin07 .arrow-down:hover {background-position:0 -46px;}
+.skin07 .arrow-up img{background-position:0 -20px;}
+.skin07 .arrow-down img{background-position:0 -32px;}
+.skin07 .arrow-up:hover img{background-position:0 -144px;}
+.skin07 .arrow-down:hover img{background-position:0 -148px;}
+
+.skin08 a:link, .skin08 a:visited, .skin08 a:hover {color:#746c4b;}
+.skin08 .location {color:#8d8d8d;}
+.skin08 .weibo {border:1px solid #d4cfb2;}
+.skin08 .weibo_noborder {border:0 none;}
+.skin08 .weibo-title {background:#d4cfb2;border-bottom:1px solid #bebaa0;}
+.skin08 .arrow-up,.skin08 .arrow-down {background-repeat:repeat-x;}
+.skin08 .arrow-up:hover, .skin08 .arrow-down:hover {background-position:0 -46px;}
+.skin08 .arrow-up img{background-position:0 -20px;}
+.skin08 .arrow-down img{background-position:0 -32px;}
+.skin08 .arrow-up:hover img{background-position:0 -144px;}
+.skin08 .arrow-down:hover img{background-position:0 -148px;}
+
+.skin09 a:link, .skin09 a:visited, .skin09 a:hover {color:#5093d5;}
+.skin09 .location {color:#8d8d8d;}
+.skin09 .weibo {border:1px solid #b1d4f6;}
+.skin09 .weibo_noborder {border:0 none;}
+.skin09 .weibo-title {background:#cfe1f3;border-bottom:1px solid #bacada;}
+.skin09 .arrow-up,.skin09 .arrow-down {background-repeat:repeat-x;}
+.skin09 .arrow-up:hover, .skin09 .arrow-down:hover {background-position:0 -46px;}
+.skin09 .arrow-up img{background-position:0 -20px;}
+.skin09 .arrow-down img{background-position:0 -32px;}
+.skin09 .arrow-up:hover img{background-position:0 -144px;}
+.skin09 .arrow-down:hover img{background-position:0 -148px;}
+
+.skin10 a:link, .skin10 a:visited, .skin10 a:hover {color:#558CAA;}
+.skin10 .location {color:#8d8d8d;}
+.skin10 .weibo {border:1px solid #464646;}
+.skin10 .weibo_noborder {border:0 none;}
+.skin10 .weibo-title {background:#464646;border-bottom:1px solid #3f3f3f;}
+.skin10 .arrow-up,.skin10 .arrow-down {background-repeat:repeat-x;}
+.skin10 .arrow-up:hover, .skin10 .arrow-down:hover {background-position:0 -46px;}
+.skin10 .arrow-up img{background-position:0 -20px;}
+.skin10 .arrow-down img{background-position:0 -32px;}
+.skin10 .arrow-up:hover img{background-position:0 -144px;}
+.skin10 .arrow-down:hover img{background-position:0 -148px;}
+
+/*微博发布框*/
+.post-box .key-tips { color:#adc0c9;}
+.post-box .key-tips span { margin-right:2px; }
+.post-box .key-tips.out140 { padding-left:20px; background-position:-1px -282px; color:#f00;}
+.post-box .post-textarea { background-position:0 0; }
+.post-box .post-textarea .inner { background-position:right -80px; }
+.post-box .post-focus { background-position:0 -160px;}
+.post-box .post-focus .inner { background-position:right -240px; }
+.post-box .share-btn { background-position:0 -336px;}
+.post-box .share-btn:hover { background-position:-88px -336px;}
+.post-box .share-btn-disable { background-position:-176px -336px; cursor:default;}
+.post-box .share-btn-disable:hover { background-position:-176px -336px; cursor:default;}
+.post-box .load-fail { background-position:0 -432px;  }
+.post-box .post-success { background-position:-40px -432px; }
+
+.btn-follow-all { display:inline-block;width:106px;height:32px;background-position:0 -384px; }
+.btn-follow-all:hover { background-position:-128px -384px; }
+
+/*加关注和已关注按钮*/
+.btn-addfollow, .btn-followed { float:right;margin-top:10px;width:54px;height:21px; text-indent:-9999px; outline:none;cursor:pointer; }
+.btn-addfollow { background-position:0 -464px; }
+.btn-addfollow:hover { background-position:-72px -464px; }
+.btn-followed { background-position:-144px -464px; cursor:default; }
+
+/*群组tab*/
+.tab-s1 { float:right;padding-right:5px;height:23px;line-height:23px;overflow:hidden; }
+.tab-s1 li { position:relative;float:left;margin-right:5px;_margin-top:1px; }
+.tab-s1 a,
+.tab-s1 .current { float:left; height:23px; line-height:23px; }
+.tab-s1 a span,
+.tab-s1 .current span { float:left;margin-left:8px;padding:0 14px 0 6px;background-position:right -24px;_display:inline; }
+.tab-s1 a { background-position:left 0;}
+.tab-s1 a span { background-position:right -24px; }
+.tab-s1 .current { background-position:left -48px;}
+.tab-s1 .current span{ background-position:right -72px; }

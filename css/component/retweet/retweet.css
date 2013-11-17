@@ -1,0 +1,130 @@
+@charset "utf-8";
+/*
+  维护者：蔡伟江
+  文档作用：定义转发按钮前台功能模块样式
+*/
+body, p, h3 { margin:0; padding:0; }
+body { font:12px/1.5 Arial, Helvetica, sans-serif; word-wrap:break-word; word-break:break-all; }
+textarea { font-family:Arial, Geneva, sans-serif; overflow-x:hidden; overflow-y:auto; resize:none; }
+img { border:0; }
+a { color:#0082cb; text-decoration:none; }
+a:hover { text-decoration:underline; }
+.hidden{ display:none!important;}
+#retweet { background:#8DD7F5; }
+.retweet { width:550px; height:440px; margin:10px auto 0; background:#fff url(bgimg/retweet_hd_bg.png) repeat-x top center; overflow:hidden; }
+.retweet-in { padding:0 20px; }
+.retweet .hd { position:relative; height:85px; border-bottom:1px dotted #ccc; }
+.retweet .hd .logo-pic, .retweet .hd .hd-msg { position:absolute; bottom:18px; outline:none; }
+.retweet .hd .logo-pic { left:0; }
+.retweet .hd .hd-msg { right:0; }
+.retweet .bd { padding-top:10px; }
+
+/*微博发布框*/
+.post-box .share-btn,
+.post-box .share-btn:hover,
+.post-box .share-btn-disable,
+.addfollow-btn,
+.followed-btn,
+.retweet .go-weibo-btn a,
+.icon-close-btn,
+.icon-alert { background:url(bgimg/retweet_bg.png) no-repeat; }
+.post-box .post-textarea, .post-box .post-textarea .inner, .post-box .post-focus, .post-box .post-focus .inner { background:url(bgimg/post_box_bg.png ) no-repeat; }
+.post-box { position:relative; padding:45px 0 20px; height:115px; _zoom:1; }
+.post-box .post-tit { position:absolute; top:10px; left:0; font-size:14px; color:#629500; }
+.post-box .key-tips { position:absolute; right:0; top:0; height:30px; line-height:30px; color:#666; }
+.post-box .key-tips span { font-size:26px; font-family:"Constantia", Times, serif; }
+.post-box .key-tips.out140 { padding-left:20px; background-position:-1px -282px; color:#f00; }
+.post-box .post-textarea { background-position:0 -32px; }
+.post-box .post-textarea .inner { background-position:right -112px; }
+.post-box .post-textarea .inner, .post-box .post-focus .inner { padding:10px 7px 10px 3px; height:55px; }
+.post-box .post-textarea .inner textarea, .post-box .post-focus .inner textarea { width:100%; height:55px; border:0 none; font-size:14px; line-height:18px; overflow-x:hidden; }
+.post-box .post-textarea, .post-box .post-focus { padding-left:7px; height:75px; }
+.post-box .post-focus { background-position:0 -192px; }
+.post-box .post-focus .inner { background-position:right -272px; }
+.post-box .share-btn { position:absolute; right:0; top:130px; width:86px; height:29px; background-position:0 0; cursor:pointer; text-indent:-9999px; outline:none; }
+.post-box .share-btn:hover { background-position:-104px 0; }
+.post-box .share-btn-disable, .post-box .share-btn-disable:hover { background-position:-208px 0; cursor:default; }
+
+/*转发成功*/
+.retweet .succeed h3 { margin:16px 0 10px; font:bold 20px Microsoft YaHei; color:#333; }
+.retweet .retweet-msg { border-top:1px solid #ccc; }
+.retweet .succeed { text-align:center; }
+.retweet .retweet-msg { margin-top:60px; padding:25px 60px 0 70px; }
+.retweet .user-pic { float:left; }
+.retweet .user-pic img { width:50px; height:50px; padding:1px; border: 1px solid #C1C9CF; background:#fff; }
+.retweet .followed-btn, .retweet .addfollow-btn { float:right; margin-top:20px; }
+
+/*加关注和已关注按钮*/
+	.addfollow-btn, .followed-btn { display:block; width:54px; height:21px; background-position:0 -49px; text-indent:-9999px; outline:none; cursor:pointer; }
+.addfollow-btn:hover { background-position:-72px -49px; }
+.followed-btn { background-position:-144px -49px; cursor:default; }
+.retweet .msg-content { height:55px; width:60%; margin:0 70px 0 65px; overflow:hidden; }
+.retweet .msg-content p { margin-top:5px; line-height:1.3em; }
+.retweet .go-weibo-btn a { display:block; width:118px; height:35px; margin:20px auto; background-position:0 -90px; overflow:hidden; text-indent:-9999px; }
+.retweet .go-weibo-btn a:hover { background-position:-144px -90px; }
+
+/*转发按钮*/
+.share { float:left; position:relative; cursor:pointer;}
+.share-b{ width:140px;height:32px; background:url(bgimg/btn_share_l1.png) no-repeat;}
+.share-d{ width:105px;height:24px; background:url(bgimg/btn_share_m1.png) no-repeat;}
+.share-f{ width:85px;height:16px; background:url(bgimg/btn_share_s1.png) no-repeat;}
+.share-h{ width:32px;height:32px; background:url(bgimg/btn_share_l2.png) no-repeat;}
+.share-j{ width:24px;height:24px; background:url(bgimg/btn_share_m2.png) no-repeat;}
+.share-l{ width:16px;height:16px; background:url(bgimg/btn_share_s2.png) no-repeat;}
+
+.btn-s1,
+.btn-s1 span { background:url( bgimg/btn_bg.png ) no-repeat; }
+/*通用12号字体按钮*/
+	.btn-s1{ display:inline-block; outline:none; }
+	.btn-s1 span{ float:left;margin-left:5px;cursor:pointer;_display:inline; }
+	.btn-s1,
+	.btn-s1 span { height:25px;line-height:25px;color:#333; }
+	.btn-s1 { background-position:left -56px; }
+	.btn-s1 span { padding:0 18px 0 14px;background-position:right -84px; }
+	.btn-s1:hover { background-position:left -112px;text-decoration:none; }
+	.btn-s1:hover span { background-position:right -140px; }
+	.btn-s1-light { background-position:left 0; }
+	.btn-s1-light span { background-position:right -28px; }
+	.btn-s1-disabled,
+	.btn-s1-disabled:hover{ height:25px;background-position:left -168px;cursor:default; }
+	.btn-s1-disabled span,
+	.btn-s1-disabled:hover span{ height:25px;line-height:25px;background-position:right -196px;cursor:default;color:#aaa; }
+
+/*浮层*/
+	/*窗口公共部分*/
+	.win-pop{ z-index:10003;}
+	.win-pop .win-t,
+	.win-pop .win-t div,
+	.win-pop .win-b,
+	.win-pop .win-b div{ background:url(bgimg/win_bg.png) no-repeat; _font-size:0; }
+	.win-pop .win-t,
+	.win-pop .win-b,
+	.win-pop .win-con .win-con-bg{ filter:alpha(opacity=10); opacity:0.1;}
+	.win-pop .win-t{ height:5px; background-position:left 0;}
+	.win-pop .win-t div{ margin-left:6px; height:5px; background-position:right -5px;}
+	.win-pop .win-b{ height:5px; background-position:left -10px;}
+	.win-pop .win-b div{ margin-left:6px; height:5px; background-position:right -15px;}
+	.win-pop .win-con{ position:relative; overflow:hidden; _zoom:1;}
+	.win-pop .win-con .win-con-in{ margin:1px 6px; border:1px solid #666; background-color:#fff; -webkit-border-radius:3px; -moz-border-radius:3px; _zoom:1;}
+	.win-pop .win-con .win-con-bg{ position:absolute; top:0; left:0; width:100%; height:100%; _height:600px; background:#000; z-index:-1;}
+	.win-pop .win-tit{ margin:1px 1px 0; height:26px; line-height:26px; font-size:12px; text-indent:6px; background:url(bgimg/x_bg.png); }
+	.win-pop .arrow{ position:absolute; left:25px; top:-1px; width:15px; height:8px; background-position:-63px -189px; _font-size:0;}
+	.win-pop .icon-close-btn{ position:absolute; right:15px; top:15px; }
+	.win-pop .btn-area{ float:right; margin-top:10px;}
+	.win-pop .btn-area a{ margin-left:8px;}
+
+	/*fixed定位窗口*/
+	.win-fixed{ position:fixed; top:50%; left:50%;}
+	*html{ background-attachment:fixed; background-image:url('about:blank');}
+	*html .win-fixed{ position:absolute; bottom:auto; top:expression(documentElement.scrollTop + (documentElement.clientHeight/2 - this.clientHeight/2));  margin-top:0;}
+
+	/*提示窗口*/
+	.win-tips{ margin-left:-170px; margin-top:-80px; width:340px;}
+	.win-tips .win-box{ padding:15px 20px 10px; overflow:hidden; _zoom:1;}
+	.win-tips .win-box .tips-c{ _zoom:1;}
+	.win-tips .win-box .tips-c p{ margin:0 0 30px 50px; padding-top:12px; font-size:14px;}
+	.win-tips .win-box .tips-c p span{ display:block; margin-top:8px; font-size:12px; color:#999;}
+
+	.icon-alert{ float:left; width:42px; height:35px; background-position:0 -136px;}
+	.icon-close-btn{ width:10px; height:9px;background-position:-280px -184px;}/*浮层关闭按钮*/
+	.icon-close-btn:hover { background-position:-281px -201px;}

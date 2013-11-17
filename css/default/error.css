@@ -1,0 +1,33 @@
+﻿@charset "utf-8";
+/*
+  维护者：林毅、蔡伟江
+  文档作用：404、错误页面的样式
+*/
+
+/* reset */
+body, p, h3{ margin:0; padding:0;}
+body{ background:#f0f0f0; color:#666; font:14px/1.5 Tahoma, Geneva, sans-serif; }
+
+/*错误页面共用样式*/
+a{ color:#1A88B1; font-size:12px; text-decoration:none; }
+a:hover{ text-decoration:underline; }
+.error{ position:absolute; left:50%; top:50%; height:292px; width:682px; margin:-146px 0 0 -341px;  overflow:hidden; }
+	.error p{ margin:3px 0; }
+	.error .b{ margin-bottom:10px; }
+	.error h3{ margin-bottom:15px; font: 24px Microsoft YaHei, "黑体", "宋体", sans-serif; letter-spacing:2px; color:#444;  }
+	
+	.err-404{ background:url(bgimg/404_bg.png) no-repeat; }
+	.err-busy{ background:url(bgimg/err_busy_bg.png) no-repeat; }
+	.err-inhibit{ background:url(bgimg/err_inhibit_bg.png) no-repeat; }
+	.err-upgrade{ background:url(bgimg/err_upgrade_bg.png) no-repeat; }
+
+	.error .error-con{ position:absolute;  left:70px; width:330px; }
+	.err-404 .error-con{ top:77px;}
+	.err-busy .error-con{ top:60px; }
+	.err-inhibit .error-con{ top:69px; }
+	.err-upgrade .error-con{ top:76px;}
+	
+	.err-inhibit .error-con p{ margin-bottom:20px; }
+	.err-inhibit .error-con a{ margin-right:10px; }
+	.err-busy h3{ margin-bottom:13px; }
+	.err-404 .error-con a{ margin-left:5px; }  

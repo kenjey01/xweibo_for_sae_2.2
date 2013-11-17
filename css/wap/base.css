@@ -1,0 +1,70 @@
+/* Reset */
+body,div,a,table,form,img,ul,li{ margin:0; padding:0;}
+li{ list-style:none;}
+html { background-color:#f0f8fb; }
+body { margin:10px 0;font:12px/1.5 "宋体"; }
+img { border:0 none; }
+textarea { width:95%;  }
+a:link, a:visited { color:#06b;text-decoration:none; }
+
+.logo { margin-left:10px; }
+
+/*导航*/
+.nav { margin-top:8px;padding-left:5px;background-color:#5fabef;color:#9cf; }
+.nav a { padding:0 5px; }
+.nav a:link,
+.nav a:visited { color:#fff; }
+/*用户介绍*/
+.u-intro { margin:5px 10px 0;overflow:hidden;  }
+.u-img img { border:1px solid #cdcece; }
+
+/*发微博、评论*/
+.send { padding:5px 10px;background:#e0f3fd;border:solid #cce0f5;border-width:1px 0; }
+
+.list { margin:0 10px; }
+.s-box { margin:0 10px; }
+.hint { margin:0 10px; }
+
+/*设置区域*/
+.s-area { margin:0 10px; }
+
+/*字号设置*/
+.f12 { font-size:12px; }
+.f14 { font-size:14px; }
+.f16 { font-size:16px; }
+.f18 { font-size:18px; }
+
+/*公共row*/
+.row { margin-top:5px;padding-left:10px;background:#e0f3fd;border:1px solid #cce0f5;line-height:21px; }
+/*.row a { margin:0 5px; }*/
+
+/*功能*/
+.fc { margin:0 10px 5px; }
+
+/*微博列表*/
+.f-list { margin:0 10px;padding:10px 0;border-bottom:1px dotted #ccc; }
+.f-list .con { color:#000; }
+/*分页*/
+.pages { margin:0 10px;padding:3px 0; }
+/*页脚*/
+.ft { margin:5px 5px 0; }
+.ft .gotop { padding-left:10px;background:url( bgimg/icon_top.png ) left center no-repeat; }
+.ft .copyright { float:right;color:#888; }
+.ft a:link, .ft a:visited { color:#06b; }
+/*名人堂table*/
+table{ border-width:0; line-height:14px;}
+/*搜索结果*/
+.ta { margin-top:5px;padding:5px;background:#e0f3fd;border:1px solid #cce0f5; color:#888;}
+/*话题排行榜*/
+.t-l{ margin:10px; }
+/*查看图片*/
+.back{ padding-left:10px; background:url(../../css/wap/bgimg/icon_goback.png) 0 center no-repeat; }
+/*公用*/
+.c{ margin:0 10px;padding:5px 0 0; }
+	.r{ color:red; }/*红字*/
+	.g{ color:#888; }/*灰字*/
+	.s{ margin:3px 10px; border-bottom:1px dotted #ccc; }/*虚线*/
+/*下显示搜索结果*/
+.search-txt{
+    color:red;
+}

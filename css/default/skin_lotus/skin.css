@@ -1,0 +1,149 @@
+@charset "utf-8";
+/*
+  维护者：林毅/蔡伟江
+  文档作用：默认样式，定义微博标准版主题相关样式，包括背景、文本颜色、链接颜色、边框等
+*/
+/*主背景色*/
+html { background-color:#f1e9f3;}
+
+/*主文字色*/
+body,
+.nav a { color:#444;}
+
+/*辅助连接色*/
+.sub-link,
+.feed-list .feed-info p a,
+.feed-list .feed-info span a,
+.feed-list .forward p span a,
+.gotop:link,
+.gotop:visited,
+.ft-con a,
+.icon-reply,
+.icon-del { color:#BAABC7; }
+
+/*主链接色*/
+a,
+.feed-list .feed-filter a,
+.user-preview .user-total-box a，
+.user-preview .user-total-box a:hover,
+.gotop:hover { color:#8E6DAB; }
+
+
+/*标题字体色*/
+.user-sidebar .hd h3,
+.user-list-s1 .hd h3,
+.user-tag .tag-tit h3,
+.top10 .hd h3,
+.user-tag .hd h3,
+.user-preview .user-intro strong,
+.feed-list .feed-tit h3,
+.title-box h3,
+.column-title h3,
+.account-login h3,
+.recom-box .hd h3,
+.att-topic .hd h3,
+.events-title h3,
+.recent-event .hd h3,
+.tit-hd h3,
+.tit-s1 h3,
+.tab-s2 span a,
+.tab-s2 span a:visited,
+.tab-s3 span a,
+.tab-s3 span a:visited { color:#000; }
+
+/*顶部导航菜单 - 设置页面*/
+.nav .user-link .manage,
+.nav .user-link .manage:visited { color:#f00; }
+.nav .user-link .manage:hover { background-color:#fff; color:#f00; }
+
+.nav .defined-link a:hover,
+.nav .user-link a:hover,
+.tab-s4 a:hover,
+.tab-s4 .current,
+.tab-s4 .current:visited { background-color:#BB8FA5;color:#fff;}
+
+#wrap{ background:url( bgimg/bg_main_x.png ) repeat-x center top; }
+.wrap-in { background:url( bgimg/bg_main.jpg ) no-repeat center top; }
+
+.addfollow-btn,
+.followed-btn,
+.post-box .post-title,
+.post-box .share-btn,
+.post-box .share-btn:hover, 
+.post-box .share-btn-disable { background:url( bgimg/skin_bg.png ) no-repeat; }
+
+#container { background:url(bgimg/bg_content.png) repeat-y right; }
+
+/*返回顶部*/
+.gotop .gotop-bg{ background:#f1dae6; opacity:0.9; filter:alpha(opacity=90);}
+
+#footer .ft-bg { position:absolute; top:0; left:0; background:#f1dae6; width:100%; height:60px; opacity:.9; filter:alpha(opacity=90); }
+
+/*微博发布框*/
+.post-box .post-title { background-position:0 0; }
+.post-box .post-textarea { background-position:0 -32px; }
+.post-box .post-textarea .inner { background-position:right -112px; }
+.post-box .post-focus { background-position:0 -192px;}
+.post-box .post-focus .inner { background-position:right -272px; }
+
+.post-box .share-btn { background-position:0 -80px;}
+.post-box .share-btn:hover { background-position:-104px -80px;}
+.post-box .share-btn-disable { background-position:-208px -80px; cursor:default;}
+.post-box .share-btn-disable:hover { background-position:-208px -80px; cursor:default;}
+
+/*两栏菜单*/
+.menu .menu-custom,
+.menu .menu-over{ background:url(bgimg/menu_bg.png) repeat-x 0 -123px; }
+.menu .menu-custom{ font-weight:bold; }
+.menu li{ background:url(bgimg/menu_bg.png) no-repeat right -84px;}
+.menu li.last{ background:none; }
+.menu a,
+.menu a:visited { color:#000;}
+.menu .sub-pubmenu a:visited { color:#444; }
+.menu .menu-bg{ background:url(bgimg/menu_bg.png) repeat-x 0 -47px;}
+.menu .menu-bg .l-bg,
+.menu .menu-bg .r-bg{ background:url(bgimg/menu_bg.png); }
+.menu .menu-bg .l-bg{ background-position:0 0; }
+.menu .menu-bg .r-bg{ background-position:right 0; }
+.menu .sub-pubmenu { border:1px solid #DBD5F3; background:#fff; }
+.menu .sub-pubmenu li a{ font:12px/25px Tahoma; color:#444; }
+.menu .sub-pubmenu li a:hover { background:#EDE9F8; text-decoration:none; }
+.menu .sub-arrow{ background:url(bgimg/menu_bg.png) left -176px; *background-position:left -171px; }
+
+/*两栏-右边栏用户菜单*/
+#home .home-current,
+#atme .atme-current,
+#comments .comment-current,
+#favs .favs-current,
+#systemnotice .systemnotice-current,
+#messages .messages-current {  background:#BB8FA5; color:#fff; }
+
+
+/*三栏站点导航*/
+.nav-block h3,
+.nav-block a:link,
+.nav-block a:visited { color:#444; }
+.nav-block h3 a:hover,
+.nav-block ul li a:hover { background-color:#F6E2EC; }
+
+.nav-block .cur { background-color:#BB8FA5;color:#fff !important;font-weight:700; }
+.nav-block .cur:hover { background-color:#BB8FA5;text-decoration:none; }
+
+/*微博广场*/
+	/*导入图片*/
+	.hot-topic{ background:#fff url(bgimg/hot_topic_bg.jpg) center top no-repeat; }
+
+/*公用类*/
+	
+	/*加关注和已关注按钮*/
+	.addfollow-btn,
+	.followed-btn { display:block; width:54px; height:21px; background-position:0 -40px; text-indent:-9999px; outline:none;cursor:pointer; }
+	.addfollow-btn:hover { background-position:-72px -40px;}
+	.followed-btn{ background-position:-144px -40px; cursor:default; }
+	
+	/*评论提示文字*/
+	.gray-text { color:#707070;}
+	
+	/* 默认表单样式 */
+	.form-area .form-item select {font-size:13px;}
+	#edit-event .form-area .form-item label {font-size:14px;}

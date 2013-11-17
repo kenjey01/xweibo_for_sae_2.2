@@ -1,0 +1,143 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>转发按钮</title>
+<link href="css/component/retweet/retweet.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+
+
+<script>
+    function share(){
+        var qstr = location.search.substr(1);
+        window.open('index.php?m=share&'+qstr);
+    }
+    
+    function dequery(url){
+        var param = {};
+        url = url.substr(url.indexOf('?')+1);
+        if(url){
+            url = url.split('&');
+            for(var i=0,len=url.length;i<len;i++){
+                var arr = url[i].split('=');
+                param[arr[0]] = decodeURIComponent( arr[1] );
+            }
+        }
+        return param;
+    }
+    
+    var params = dequery(location.search);
+    
+    var type = params['type']||1;
+    var num = 0;
+    document.write('<div class="share share-'+type+'" onclick="share()"></div>');
+    
+    function q(key) { return params[key]||''; }
+// ----
+var appkey = q('appkey') || 1681459862;
+var jsc = +new Date;
+
+/*
+if(num)
+    getCount();
+*/
+function getJSON(s) {
+	var data;
+	var jsonp;
+	var ts = +new Date;
+	var jsre = /=\?(&|$)/g;
+	s.data = s.data || "";
+	s.data = (s.data ? s.data + "&" : "") + "callback" + "=?";
+	jsonp = "jsonp" + jsc++;
+	s.data = (s.data + "").replace(jsre, "=" + jsonp + "$1");
+	window[jsonp] = function(tmp) {
+		data = tmp;
+		success();
+		window[jsonp] = undefined;
+		try{ delete window[jsonp]; }catch(e){}
+		if (head) head.removeChild(script);
+	};
+	var ret = s.url.replace(/(\?|&)_=.*?(&|$)/, "$1_=" + ts + "$2");
+	s.url = ret + ((ret == s.url) ? (s.url.match(/\?/) ? "&" : "?") + "_=" + ts : "");
+	
+	if (s.data) {
+		s.url += (s.url.match(/\?/) ? "&" : "?") + s.data;
+		s.data = null;
+	}
+	var done = false;
+	var head = document.getElementsByTagName("head")[0];
+	var script = document.createElement("script");
+	if (s.scriptCharset) script.charset = s.scriptCharset;
+	script.src = s.url;
+	script.onload = script.onreadystatechange = function() {
+		if ( !done && (!this.readyState || this.readyState == "loaded" || this.readyState == "complete") ) {
+			done = true;
+//			success();
+			script.onload = script.onreadystatechange = null;
+			try {head.removeChild( script );}catch(e){}
+		}
+	};
+	head.appendChild(script);
+	
+	var success = function() {
+		if (s.success) {
+			s.success(data);
+		}
+	};
+}
+
+function loadCount(url) {
+	var short_url = "http://api.t.sina.com.cn/short_url/shorten.json";
+	var count_url = "http://api.t.sina.com.cn/short_url/share/counts.json";
+	var short_data = "source=" + appkey + "&url_long=" + encodeURI(url);
+	getJSON({
+		url: short_url,
+		data: short_data,
+		scriptCharset: "utf-8",
+		success: function(data) {
+			if (!data) {
+				alert("API接口错误！");
+				return;
+			}
+			var count_data = "source=" + appkey + "&url_short=" + encodeURI(data[0].url_short);
+			getJSON({
+				url: count_url,
+				data: count_data,
+				scriptCharset: "utf-8",
+				success: function(data) {
+					if (!data) {
+						alert("API接口错误！");
+						return;
+					}
+					setCount(data);
+				}
+			});
+		}
+	});
+};
+
+function getCount() {
+	var url = q('url');
+	loadCount(url);
+};
+
+function setCount(data) {
+      var count = 0;
+      try {
+         count = data[0].share_counts || 0;
+         var n = count / 10000 >> 0;
+         if (n > 0) {
+            var m = (count % 10000) / 1000 >> 0;
+            m = m > 0 ? "." + m : "";
+            count = "" + n + m + "万"
+         }
+      } catch (e) {}
+	var ct = document.getElementById("count");
+	if(ct)
+	    ct.innerHTML = count;
+};
+</script>
+</body>
+</html>
+

@@ -1,0 +1,6 @@
+#复制到相应的sae应用版本的config.yaml文件下
+handle:
+  - hostaccess: if(path ~ "^(application/|templates/|cron/|config\.php$|user_config\.php$)") deny "all"
+  - rewrite:if(!is_file() && !is_dir()  &&  path ~ "^((?!account|authImage|custom|feedback|interview|output|search|xPluginApi|setting|welcome)[a-zA-Z][a-zA-Z0-9_-]{5,})$") goto "/index.php?m=ta&_udomain=$1"
+  - rewrite:if(!is_file() && !is_dir()  && path ~ "^([0-9]{1,})$") goto "/index.php?m=ta&id=$1"
+  - rewrite:if(!is_file() && !is_dir() && path ~ "^(.*)$") goto "/index.php/$1?%{QUERY_STRING}"

@@ -1,0 +1,45 @@
+<appwizard>
+	<introduction> 
+		<name>XWeibo</name>
+		<author>xweibo team</author>
+		<icon>static/image/app_icons/xweibo.png</icon>
+		<homepage>http://x.weibo.com/</homepage>
+		<description>
+		<![CDATA[
+		<p>
+		Xweibo 2.0标准版是基于新浪api开发的一套微博标准版系统,拥有新浪微博的基础功能,开发者可以在此版本上进行二次开发。
+		</p>
+	    ]]>
+		</description>
+	</introduction>
+	<platform> 
+		<services> 
+			<service name="xweibo"  params="XWeibo数据存储">Storage</service>
+			<service name="config"  params="private,XWeibo配置信息">Storage</service>
+			<service size="20M">Memcache</service>
+			<service>Mysql</service> 
+		</services>
+		<appconfig> 
+			<tpl>
+            <![CDATA[
+name: <<appname>>
+version: <<version>>
+handle:
+  - hostaccess: if(path ~ "^(application/|templates/|cron/|config\.php$|user_config\.php$)") deny "all"
+  - rewrite:if(!is_file() && !is_dir()  &&  path ~ "^((?!account|authImage|custom|feedback|interview|output|search|xPluginApi|setting|welcome)[a-zA-Z][a-zA-Z0-9_-]{5,})$") goto "/index.php?m=ta&_udomain=$1"
+  - rewrite:if(!is_file() && !is_dir()  && path ~ "^([0-9]{1,})$") goto "/index.php?m=ta&id=$1"
+  - rewrite:if(!is_file() && !is_dir() && path ~ "^(.*)$") goto "/index.php/$1?%{QUERY_STRING}"
+            ]]>
+			</tpl>
+		</appconfig>
+	</platform>
+	<code> 
+	<initScript>index.php</initScript>
+	</code>
+	<clean url="sae_install/clean.php">
+		<![CDATA[
+			<p>系统检测到您已经安装旧版的xweibo，如果安装xweibo2.0，则需要删除旧版xweibo的配置文件信息</p>
+			<p style="font-weight:bold;font-size:14px;color:red;">如果继续安装，在您完成xweibo2安装之前，旧版xweibo将不可使用</p>
+		]]>
+	</clean>
+</appwizard>

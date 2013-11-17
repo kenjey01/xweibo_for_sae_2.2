@@ -1,0 +1,77 @@
+﻿@charset "utf-8";
+/*
+  维护者：林毅
+  文档作用：定义微博标准版换肤样式
+*/
+
+/*设置皮肤浮层*/
+.skin-set{ background:#fff; border-bottom:2px solid #ddd;}
+.skin-set .skin-set-in{ margin:0 auto; width:946px;overflow:hidden; }
+.skin-set .skin-list { margin-bottom:18px; overflow:hidden; zoom:1;}
+.skin-set .skin-list a{ float:left; margin:18px 10px 0;padding:2px; border:1px solid #b4b4b4; height:67px; color:#999;_margin:18px 9px 0 10px; _display:inline;}
+.skin-set .skin-list a:visited { color:#999;}
+.skin-set .skin-list a:hover { padding:1px; border:2px solid #52a3ec; text-decoration:none;}
+.skin-set .skin-list .current{ padding:1px; border:2px solid #52a3ec; }
+.skin-set .skin-list .current span{ background:url(bgimg/ico_bg.png) right -606px no-repeat; color:#000; font-weight:700;}
+.skin-set .skin-list .current span em{ display:inline-block; margin:auto; width:75px; height:16px; word-break:keep-all; overflow:hidden;}
+.skin-set .skin-list span{ display:block; padding:2px 0 1px; text-align:center;}
+.skin-set .btn-area{ position:absolute; right:0; top:3px; line-height:1.5;}
+.skin-set .btn-area a{ margin-left:10px;}
+.skin-set .btn-area span{ margin-right:0; font-size:12px;}
+
+.skin-set .skin-custom { margin:10px;padding:9px 0 9px 19px;overflow:hidden;zoom:1;border:1px solid #ddd; }
+.skin-set .skin-setbg { float:left;width:440px;border-right:1px dashed #ddd; }
+.skin-set .skin-setbg .upload-pic { position:relative;float:left;margin-right:20px;_zoom:1; }
+.skin-set .skin-setbg .upload-pic img { width:126px;height:126px;border:1px solid #dadada; }
+.skin-set .skin-setbg .upload-pic .ico-del-pic { position:absolute;right:5px;top:5px;*right:10px; }
+.skin-set .skin-setbg .oper-area { float:left; }
+.skin-set .skin-setbg .oper-area .frm-row { overflow:hidden;_zoom:1; }
+.skin-setbg .oper-area .frm-row .input-txt { padding:3px;width:182px;height:17px;line-height:17px;border:1px solid #bfbfbf; }
+.skin-setbg .oper-area .frm-row .btn-browse { width:60px;height:25px;line-height:25px;background:url( bgimg/btn_browse.png) no-repeat;border:0 none;text-align:center; }
+.skin-setbg .oper-area h5 { margin:5px 0;padding:0;font:700 12px/1.5 "宋体";color:#707070; }
+.skin-setbg .oper-area .setbg-way { margin-top:5px;color:#707070; }
+.skin-setbg .oper-area .setbg-way input { margin-right:5px;vertical-align:-3px;  }
+.skin-setbg .oper-area .btn-align-bg { margin-top:10px;padding:1px 1px;width:149px;height:23px;background:url( bgimg/btn_bg_align.png ) no-repeat; }
+.skin-setbg .oper-area .btn-align-bg a { float:left;width:49px;line-height:23px;background:none;color:#707070;text-align:center;_display:inline; }
+.skin-setbg .oper-area .btn-align-bg .cur { width:51px;height:23px;background:#878787;color:#fff; }
+.skin-set .skin-setcolor { float:left;padding-left:20px;width:440px;overflow:hidden;_zoom:1; }
+.skin-set .skin-setcolor .preview-box { float:left;margin-right:20px;padding:5px;width:116px;height:116px;border:1px solid #dadada;background:#8dd7f5; }
+
+.pb-main { float:left;padding:4px;width:79px;height:108px;background:#fff; }
+.pb-main .pb-post-box { position:relative;height:12px;border:1px solid #dedede; }
+.pb-main .pb-post-box .pb-post-btn { position:absolute;top:13px;right:-1px;width:14px;height:4px;font-size:0;background:#dedede; }
+.pb-main .pb-list { margin-top:10px;width:79px;overflow:hidden; }
+.pb-user-pic { float:left;margin-right:2px;width:12px;height:12px;border:1px solid #dedede;background:#fff; }
+.pb-main .pb-list .pb-con { float:left;display:inline;margin-left:2px;position:relative;width:61px;height:14px;background:#44b1da; }
+.pb-main .pb-list .pb-con .c1 { position:absolute;top:0;left:0;width:61px;height:9px;border-bottom:2px solid #fff;background:#444;font-size:0; }
+.pb-main .pb-list .pb-con .c2 { position:absolute;top:0;left:0;width:14px;height:4px;border:solid #fff;border-width:0 2px 2px 0;font-size:0;background:#0082cb; }
+.pb-aside { position:relative;float:left;padding:4px 3px;width:23px;height:108px; }
+.pb-aside .bg { position:absolute;left:0;top:0;width:29px;height:116px;background:#fff;opacity:.4;filter:alpha(opacity=40); }
+.pb-aside .pb-user-con { float:left;width:23px;overflow:hidden; }
+.pb-aside .pb-user-info { float:left;padding:1px 0; }
+.pb-aside .pb-user-info .ui1 { width:7px;height:3px;font-size:0;background:#000; }
+.pb-aside .pb-user-info .ui2 { margin-top:2px;width:7px;height:7px;font-size:0;background:#444; }
+.pb-aside .pb-block { float:left;width:23px;margin-top:14px;overflow:hidden;*zoom:1; }
+.pb-aside .pb-block div { width:14px;height:4px;font-size:0;background:#000; }
+.pb-aside .pb-block p { margin-top:2px;width:14px;font-size:0;height:4px;background:#0082cb; }
+.pb-aside .pb-more { float:right;width:7px;height:4px;font-size:0;background:#44b1da; }
+
+.skin-set .skin-setcolor .color-scheme { float:left;width:280px; }
+.skin-set .skin-setcolor .color-scheme p { color:#707070; }
+.color-draw { overflow:hidden;_zoom:1; }
+.color-draw .color-area { float:left;margin-top:10px;overflow:hidden;_zoom:1; }
+.color-draw .color-area a { float:left;margin:1px 5px 0 0px;width:17px;border:1px solid #ccc; }
+.color-draw .color-area a span {display:block;width:15px;height:15px; border:1px solid #fff;}
+.color-draw .color-area a:hover {margin:0px 4px 0 -1px;border:2px solid #5fabef;}
+.color-draw .color-area .cur {margin-top:0px;border:2px solid #5fabef; }
+.color-draw .color-area .cur:hover { margin:0 5px 0 0; }
+.color-draw .pages { float:right;margin:8px 10px 0 0;overflow:hidden;_display:inline; }
+.color-draw .pages .arrow-l-s1,
+.color-draw .pages .arrow-r-s1 { float:left;margin-top:4px;outline:none; }
+.color-draw .pages span { float:left;margin:0 10px;font-family:arial;color:#707070;_display:inline; }
+.scheme-select { height:78px;overflow:hidden;_zoom:1;  }
+.scheme-select ul {width:900px;overflow:hidden;*width:auto;_zoom:1; }
+.scheme-select ul li { float:left;width:280px;overflow:hidden;_display:inline;_zoom:1; }
+.scheme-select .c-box { float:left;margin:5px 10px 0 0;width:40px;height:27px;cursor:pointer;border:2px solid #ddd;padding:1px; }
+.scheme-select .c-box .c-bg { float:left;width:8px;height:27px; }
+.scheme-select .cur { float:left;border:2px solid #5fabef; }

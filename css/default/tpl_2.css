@@ -1,0 +1,184 @@
+﻿@charset "utf-8";
+/*
+  维护者：林毅、蔡伟江
+  文档作用：定义微博标准版三栏框架结构样式
+*/
+
+/*结构*/
+#wrap, #header, .hd-in, #container, #footer, .ft-in { margin-left:auto; margin-right:auto; }
+#container:after,
+.main-wrap:after,
+.main:after,
+.live-newest .item:after,
+.guests-list ul:after,
+#header .hd-in:after { content:' '; display:block; height:0; clear:both; }
+#container,
+#container .main-wrap,
+.live-newest .item,
+.talk-newest .item,
+.guests-list ul,
+#header .hd-in { zoom:1; }
+
+/*主体布局*/
+#container { position:relative; margin:0 auto 10px; width:960px; }
+#container .extra { float:left;width:160px;_margin-right:-3px; }
+#container .content { margin-left:160px;_margin-left:157px; }
+#container .main-wrap { padding-right:200px;zoom:1; }
+#container .content .main { float:left;min-height:1px;width:100%; }
+#container .main .main-bd { padding-bottom:20px; margin:20px 20px 0; _display:inline; _zoom:1;}
+#container .content .aside { float:left; width:200px; margin-right:-200px; margin-top:20px; }
+
+#container.single .content .main{ padding:20px 0 25px;}
+#container.single .main-wrap { padding:0; }
+
+#container.single { background:url( bgimg/bg_content_single.png ) repeat-y;}
+#header .hd-in { width:960px; min-height:80px; margin-bottom:10px; _height:80px; }
+#header .hd-in .logo { float:left;margin:30px 0 0 10px; }
+	.nav .inner-nav{ width:960px; }
+
+.new-tips { margin-left:308px; }
+
+#footer { position:relative;margin-bottom:25px; }
+#footer .ft-in { position:relative;margin:0 auto;height:60px;line-height:60px;width:960px;}
+#footer .ft-bg { position:absolute; top:0; left:0; width:100%; height:60px; }
+#footer .ft-con { position:relative;z-index:10000;}
+#footer .ft-con span {margin-left:15px;}
+#footer .ft-con .footer-defined{ float:right; margin-right:10px;_position:relative;_display:inline; }
+#footer .ft-con .footer-defined s { color:#999;text-decoration:none;  }
+#footer .ft-con a{ margin:0 8px;}
+
+#user-recommand #container .content  { margin-left:0; }
+
+.ico-pub,
+.ico-rank,
+.ico-live,
+.ico-talk,
+.ico-star,
+.ico-home,
+.ico-app,
+.ico-events,
+.ico-mywb,
+.ico-ct1,
+.ico-ct2,
+.ico-ct3,
+.ico-ct4 { display:inline-block;background:url( bgimg/ico_extra.png ) no-repeat; }
+
+.ico-pub { background-position: -2px 0; }
+.ico-rank { background-position: -2px -32px; }
+.ico-live { background-position: -2px -64px; }
+.ico-talk { background-position: -2px -96px; }
+.ico-star { background-position: -2px -128px; }
+.ico-home { background-position: -2px -160px; }
+.ico-app { background-position: -2px -192px; }
+.ico-events { background-position: -2px -224px; }
+.ico-mywb { background-position:-2px -256px; }
+.ico-ct1 { background-position:-2px -288px; }
+.ico-ct2 { background-position:-2px -320px; }
+.ico-ct3 { background-position:-2px -352px; }
+.ico-ct4 { background-position:-2px -384px; }
+
+.site-nav { width:160px; }
+.site-nav .nav-bd { padding:13px 0 0;width:160px; }
+.nav-block { margin:0 10px;padding:7px 0 9px;font-size:12px;overflow:hidden;*zoom:1;background:url( bgimg/site_nav_line.png ) center bottom no-repeat; }
+.nav-block h3 { position:relative;font-size:14px; }
+.nav-block h3 a,
+.nav-block ul li a { display:block;width:140px;text-decoration:none;font-weight:400;color:#000;text-indent:31px;cursor:pointer; }
+.nav-block h3 a { padding-top:2px;height:22px; }
+.nav-block ul li a { padding-top:3px;height:21px; }
+.nav-block ul { list-style:none;margin:2px 0;  }
+.nav-block ul li { position:relative; _zoom:1;color:#666; }
+.nav-block ul li a:link,
+.nav-block ul li a:visited,
+.nav-block ul li a:hover { color:#666; }
+
+.nav-block h3 a:hover,
+.nav-block ul li a:hover { background-color:#f1f1f1; }
+
+.nav-block h3 s,
+.nav-block h3 .cur s { position:absolute;left:10px;top:4px;width:16px;height:16px; }
+.nav-block ul li a:hover,
+.nav-block .cur { border-radius:2px; }
+.nav-block .cur { color:#fff !important;font-weight:700; }
+.nav-block a:hover { text-decoration:none; }
+
+/*站点导航的右边计数样式*/
+.nav-block h3 .square,
+.nav-block ul li .square { position:absolute;top:4px;right:5px;display:inline-block;padding-top:0;width:auto;height:auto;line-height:12px;border:solid #f9a037;border-width: 0 1px;text-indent:0; text-decoration: none; outline:none; }
+.nav-block h3 .square:link,
+.nav-block h3 .square:visited,
+.nav-block ul li .square:link,
+.nav-block ul li .square:visited { color:#fff;  }
+.nav-block h3 .square span,
+.nav-block ul li .square span { display: block; position:relative; top: -1px; left: 0;border:solid #f9a037;border-width: 1px 0 0; font-weight:700;font-size:11px;font-family:arial; }
+.nav-block h3 .square span span,
+.nav-block ul li .square span span { border-width:0 0 1px; top: 2px; padding:0 2px 1px; }
+.nav-block h3 .square,
+.nav-block ul li .square,
+.nav-block h3 .square:hover,
+.nav-block ul li .square:hover { background-color:#f9a037; }
+
+/*绑定帐号*/
+#bind-account .logo-pic .logo1 {right:580px;}
+#bind-account .logo-pic .logo2 {left:580px;}
+#bind-account .logo-pic .icon-two-way {margin:0 330px;}
+
+/*名人堂*/
+.interest-list li{ margin-right:22px; }
+
+/*返回顶部*/
+.gotop{ margin-left:481px; }
+
+/*评论列表*/
+.comment-list{ padding:0 0 20px;}
+
+/*用户列表*/
+.user-list{ padding:0 0 20px;}
+
+/*微博列表*/
+.feed-list .feed-tit { background:#F7F7F7; }
+
+/*广告*/
+.xad-box-p1 { margin:20px 0;}
+
+/*广场*/
+#pub .tab-s1{ width:960px; margin-bottom:10px;}
+
+/*重置*/
+#weibo_login #container .content,
+#guide-page #container .content { margin-left:0;}
+#inhibit #container.single { background:#fff; }
+#pub #container.single .main { padding-top:0; }
+#user-recommend #container .main-bd,
+#pub-topic #container .main-bd { margin-top:0; }
+#messages .title-box { margin:5px 0 9px;padding-bottom:6px;border:solid #dedede;border-width:0 0 1px; }
+#messages .title-box h3{ background:none;font-weight:400;font-size:12px;line-height:0;padding-top:20px;color:#707070; }
+#messages .title-box h3 span {  }
+#atme .tab-s2 { margin-bottom:20px; }
+#comments .list-handle { margin-top:11px; }
+#comments .tab-s4 { margin:10px 0 0;padding-bottom:5px;padding-left:10px;border-bottom:1px solid #dedede; }
+
+/*错误页面 403 帐号被封*/
+.inhibit {margin:0 auto;overflow:hidden;padding:140px 0;width:430px;}
+
+/*仅微博帐号登录*/
+.weibo-login-info {overflow:hidden;padding-left:275px;}
+.weibo-login-con {float:left;line-height:63px;overflow:hidden;}
+.weibo-login-con p {font-size:16px;padding-left:14px;}
+.weibo-login-area {overflow:hidden;padding:0 20px 80px 340px;_zoom:1;}
+
+/*第二步：看看推荐的人*/
+#guide-wide .main-wrap { background:#fff;}
+.user-list-row { padding:15px 15px 18px; }
+#guide-wide .welcome { margin-left:160px; padding-bottom:20px;}
+#guide-wide .active-wrap { margin-left:160px; padding:0 0 20px 40px}
+#guide-wide .user-list-narrow { padding:0; margin:0;border:0; width:720px;}
+#guide-wide .welcome { padding-right:8%;}
+#guide-wide .form-info { margin-left:200px; width:710px; border:0; padding:10px 0 0 10px; border-top:1px solid #dde3e6;}
+#guide-wide .form-info .sub-menu a { line-height:23px; margin-left:0;background:#f0f0f0; color:#707070;}
+#guide-wide .form-info .sub-menu .current { background:#8dd7f5; color:#fff;}
+#guide-wide strong { float:left; line-height:25px;}
+
+/*底部广告*/
+.ft-xad-in{ width:960px; margin:0 auto 10px; overflow:hidden; }
+/*头部广告*/
+.hd-xad-in{ width:720px; }
